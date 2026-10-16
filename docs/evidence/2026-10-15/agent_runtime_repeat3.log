@@ -1,0 +1,27 @@
+ 18:17:25 up 25 min,  0 user,  load average: 123.10, 71.17, 59.80
+test agent_reports_gpus_from_nvidia_smi ... ok
+OOM job reason: exit code 137 on test-oom-37701: OOM-killed (memory limit 16 MiB)
+test orphaned_containers_are_removed_after_agent_kill9 ... ok
+cancel -> container removed in 1.903509301s (job handles SIGTERM)
+test container_oom_kill_fails_the_job ... ok
+cancel -> SIGTERM-ignoring container removed in 3.377643182s
+test container_limits_hardening_and_cancel ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.92s
+ 18:17:37 up 26 min,  0 user,  load average: 107.65, 69.57, 59.40
+test agent_reports_gpus_from_nvidia_smi ... ok
+OOM job reason: exit code 137 on test-oom-46423: OOM-killed (memory limit 16 MiB)
+test orphaned_containers_are_removed_after_agent_kill9 ... ok
+test container_oom_kill_fails_the_job ... ok
+cancel -> container removed in 947.663854ms (job handles SIGTERM)
+cancel -> SIGTERM-ignoring container removed in 3.110851196s
+test container_limits_hardening_and_cancel ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.99s
+ 18:17:47 up 26 min,  0 user,  load average: 170.53, 83.78, 64.10
+test agent_reports_gpus_from_nvidia_smi ... ok
+OOM job reason: exit code 137 on test-oom-39445: OOM-killed (memory limit 16 MiB)
+test orphaned_containers_are_removed_after_agent_kill9 ... ok
+cancel -> container removed in 1.259561249s (job handles SIGTERM)
+test container_oom_kill_fails_the_job ... ok
+cancel -> SIGTERM-ignoring container removed in 3.154862533s
+test container_limits_hardening_and_cancel ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.19s

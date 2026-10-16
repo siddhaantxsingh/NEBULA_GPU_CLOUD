@@ -1,0 +1,16 @@
+ 18:05:53 up 14 min,  0 user,  load average: 117.41, 88.05, 45.72
+   Compiling nebula v0.1.0 (/home/user/PROJECTS/nebula-gpu-cloud)
+    Finished `release` profile [optimized + debuginfo] target(s) in 14.80s
+     Running tests/agent_runtime.rs (target/release/deps/agent_runtime-63c3eb21e0fbeca0)
+
+running 4 tests
+test agent_reports_gpus_from_nvidia_smi ... ok
+OOM job reason: exit code 137 on test-oom-43617: OOM-killed (memory limit 16 MiB)
+test orphaned_containers_are_removed_after_agent_kill9 ... ok
+cancel -> container removed in 1.79712495s (job handles SIGTERM)
+test container_oom_kill_fails_the_job ... ok
+cancel -> SIGTERM-ignoring container removed in 3.829753855s
+test container_limits_hardening_and_cancel ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.67s
+

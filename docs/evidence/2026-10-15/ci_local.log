@@ -1,0 +1,124 @@
+ 18:06:25 up 14 min,  0 user,  load average: 167.22, 102.31, 51.78
+   Compiling nebula v0.1.0 (/home/user/PROJECTS/nebula-gpu-cloud)
+    Finished `release` profile [optimized + debuginfo] target(s) in 3m 21s
+     Running unittests src/lib.rs (target/release/deps/nebula-71db2fda4cf8b111)
+
+running 10 tests
+test gpu::tests::parses_eight_gpus_and_trailing_blank_lines ... ok
+test gpu::tests::parses_single_consumer_gpu ... ok
+test gpu::tests::rejects_malformed_output ... ok
+test gpu::tests::unsupported_memory_field_is_none ... ok
+test runtime::tests::defaults_apply_and_root_is_refused ... ok
+test runtime::tests::hardening_and_limits_are_always_set ... ok
+test runtime::tests::real_gpus_are_passed_through_and_renumbered ... ok
+test gpu::tests::missing_binary_means_simulated ... ok
+test store::tests::crc32c_known_value ... ok
+test store::tests::decode_stops_at_torn_or_corrupt_records ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/nebula-agent.rs (target/release/deps/nebula_agent-9dfcecd4647837f2)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/nebula-bench.rs (target/release/deps/nebula_bench-6cda9713838f79ce)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/nebula-sim.rs (target/release/deps/nebula_sim-93ea9007815c827f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/nebulad.rs (target/release/deps/nebulad-554b477388a5c331)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/agent_runtime.rs (target/release/deps/agent_runtime-63c3eb21e0fbeca0)
+
+running 4 tests
+test agent_reports_gpus_from_nvidia_smi ... ok
+test orphaned_containers_are_removed_after_agent_kill9 ... ok
+test container_oom_kill_fails_the_job ... ok
+test container_limits_hardening_and_cancel ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 11.28s
+
+     Running tests/e2e.rs (target/release/deps/e2e-8a7d3ea7a7a774bc)
+
+running 2 tests
+test example_config_parses ... ok
+test control_plane_end_to_end ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 17.41s
+
+     Running tests/sched.rs (target/release/deps/sched-886a3b37e0867a68)
+
+running 16 tests
+test gang_job_takes_whole_nodes_and_is_all_or_nothing ... ok
+test fair_share_serves_the_tenant_with_less_usage_first ... ok
+test metering_counts_gpu_seconds_across_attempts ... ok
+test node_failure_and_gpu_failure_requeue_jobs ... ok
+test backfill_may_use_gpus_the_head_does_not_need ... ok
+test gpu_model_constraints ... ok
+test preemption_evicts_a_minimal_set_of_lower_priority_jobs ... ok
+test quota_skips_without_blocking_others ... ok
+test preemption_set_is_minimal_not_just_a_prefix ... ok
+test single_node_best_fit_keeps_whole_nodes_free ... ok
+test small_job_stays_inside_one_nvlink_island ... ok
+test strict_fifo_blocks_behind_the_head_but_backfill_does_not_delay_it ... ok
+test submit_validation ... ok
+test topology_avoids_splitting_where_first_fit_splits ... ok
+test topology_placement_is_compact ... ok
+test invariants_and_eventual_progress ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.42s
+
+     Running tests/sim.rs (target/release/deps/sim-8ddab185e345d4ef)
+
+running 3 tests
+test placement_factor_matches_the_model ... ok
+test simulation_completes_every_job_and_is_deterministic ... ok
+test policies_rank_as_expected_on_a_loaded_cluster ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.34s
+
+     Running tests/store.rs (target/release/deps/store-12ed675d0e33507b)
+
+running 3 tests
+test crash_between_snapshot_and_new_journal_does_not_double_apply ... ok
+test replay_reproduces_live_state ... ok
+test crash_at_every_byte_recovers_a_prefix has been running for over 60 seconds
+test crash_at_every_byte_recovers_a_prefix ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 248.70s
+
+   Doc-tests nebula
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+FMT_OK
+    Checking wait-timeout v0.2.1
+    Checking rustix v1.1.5
+    Checking bit-vec v0.8.0
+    Checking quick-error v1.2.3
+    Checking fnv v1.0.7
+    Checking bit-set v0.8.0
+    Checking rand_xorshift v0.4.0
+    Checking rand v0.9.5
+    Checking rand_chacha v0.9.0
+    Checking unarray v0.1.4
+    Checking tempfile v3.27.0
+    Checking rusty-fork v0.3.1
+    Checking proptest v1.11.0
+    Checking nebula v0.1.0 (/home/user/PROJECTS/nebula-gpu-cloud)
+    Finished `release` profile [optimized + debuginfo] target(s) in 2m 30s

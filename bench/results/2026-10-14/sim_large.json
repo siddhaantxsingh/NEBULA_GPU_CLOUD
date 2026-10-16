@@ -1,0 +1,492 @@
+{
+  "config": {
+    "nodes": 256,
+    "gpus_per_node": 8,
+    "islands_per_node": 2,
+    "jobs": 20000,
+    "load": 1.0,
+    "seed": 1,
+    "cross_island": 1.1,
+    "cross_node": 1.3,
+    "node_mtbf_h": 0.0,
+    "repair_min": 30.0,
+    "high_priority_frac": 0.1
+  },
+  "seeds": [
+    1
+  ],
+  "results": [
+    {
+      "policy": "fifo",
+      "jobs": 20000,
+      "makespan_h": 30.609471558509757,
+      "utilisation": 0.942326652226875,
+      "efficiency": 0.8502395543334694,
+      "mean_wait_s": 2647.7428282858527,
+      "p50_wait_s": 1659.9818920853759,
+      "p95_wait_s": 6781.714912123782,
+      "p99_wait_s": 7112.089499204849,
+      "mean_wait_high_prio_s": 2.980709128422919,
+      "mean_jct_s": 3981.0721228505568,
+      "mean_bounded_slowdown": 9.343943420794432,
+      "frac_node_compact": 0.74895,
+      "frac_island_compact": 0.8451265086074864,
+      "preemptions": 0,
+      "restarts_from_failures": 0,
+      "node_failures": 0,
+      "wait_heavy_tenant_s": 2644.3757580305305,
+      "wait_light_tenants_s": 2651.085742596731,
+      "tenants": {
+        "t0": {
+          "jobs": 9964,
+          "mean_wait_s": 2644.3757580305305,
+          "gpu_hours": 14323.623750499104
+        },
+        "t1": {
+          "jobs": 4026,
+          "mean_wait_s": 2582.5385042893495,
+          "gpu_hours": 5408.119070371012
+        },
+        "t2": {
+          "jobs": 2983,
+          "mean_wait_s": 2657.748988659267,
+          "gpu_hours": 4650.623288079502
+        },
+        "t3": {
+          "jobs": 3027,
+          "mean_wait_s": 2735.689217463256,
+          "gpu_hours": 4148.62876824861
+        }
+      },
+      "sched_passes": 40000,
+      "sched_mean_us": 1123.240902224996,
+      "sched_max_us": 56937.962
+    },
+    {
+      "policy": "fifo+backfill",
+      "jobs": 20000,
+      "makespan_h": 29.97113420198597,
+      "utilisation": 0.942715189044071,
+      "efficiency": 0.8748806611928163,
+      "mean_wait_s": 570.6525030979855,
+      "p50_wait_s": 6.469467835690011,
+      "p95_wait_s": 6227.876772481162,
+      "p99_wait_s": 7792.279373555844,
+      "mean_wait_high_prio_s": 4.724980808521056,
+      "mean_jct_s": 1879.2301115152807,
+      "mean_bounded_slowdown": 2.7273570443570683,
+      "frac_node_compact": 0.8163,
+      "frac_island_compact": 0.8978129020400661,
+      "preemptions": 0,
+      "restarts_from_failures": 0,
+      "node_failures": 0,
+      "wait_heavy_tenant_s": 570.1955050019037,
+      "wait_light_tenants_s": 571.1062226106753,
+      "tenants": {
+        "t0": {
+          "jobs": 9964,
+          "mean_wait_s": 570.1955050019037,
+          "gpu_hours": 13947.309806970808
+        },
+        "t1": {
+          "jobs": 4026,
+          "mean_wait_s": 555.2011364146254,
+          "gpu_hours": 5286.581369783971
+        },
+        "t2": {
+          "jobs": 2983,
+          "mean_wait_s": 558.3821683503521,
+          "gpu_hours": 4455.9838304741
+        },
+        "t3": {
+          "jobs": 3027,
+          "mean_wait_s": 604.7995595395953,
+          "gpu_hours": 4037.5413652004722
+        }
+      },
+      "sched_passes": 40000,
+      "sched_mean_us": 3493.160634950011,
+      "sched_max_us": 60186.768000000004
+    },
+    {
+      "policy": "fairshare+backfill",
+      "jobs": 20000,
+      "makespan_h": 29.97046158596097,
+      "utilisation": 0.9423997704736692,
+      "efficiency": 0.8606144863677707,
+      "mean_wait_s": 587.7087740251241,
+      "p50_wait_s": 0.0,
+      "p95_wait_s": 2539.2894177360686,
+      "p99_wait_s": 14746.879632943605,
+      "mean_wait_high_prio_s": 4.187664517841653,
+      "mean_jct_s": 1908.8458508525755,
+      "mean_bounded_slowdown": 2.6906688109595063,
+      "frac_node_compact": 0.7813,
+      "frac_island_compact": 0.8710408625865343,
+      "preemptions": 0,
+      "restarts_from_failures": 0,
+      "node_failures": 0,
+      "wait_heavy_tenant_s": 1163.3706908565014,
+      "wait_light_tenants_s": 16.176755361527906,
+      "tenants": {
+        "t0": {
+          "jobs": 9964,
+          "mean_wait_s": 1163.3706908565014,
+          "gpu_hours": 14175.747608522732
+        },
+        "t1": {
+          "jobs": 4026,
+          "mean_wait_s": 23.125783962613042,
+          "gpu_hours": 5339.415662551499
+        },
+        "t2": {
+          "jobs": 2983,
+          "mean_wait_s": 13.221815435219627,
+          "gpu_hours": 4570.0601360703595
+        },
+        "t3": {
+          "jobs": 3027,
+          "mean_wait_s": 9.846328091031983,
+          "gpu_hours": 4101.822887487696
+        }
+      },
+      "sched_passes": 40000,
+      "sched_mean_us": 3686.0102203249976,
+      "sched_max_us": 60162.189999999995
+    },
+    {
+      "policy": "fairshare+backfill, first-fit",
+      "jobs": 20000,
+      "makespan_h": 29.97046158596097,
+      "utilisation": 0.9620075254659582,
+      "efficiency": 0.8028423167499995,
+      "mean_wait_s": 1068.7967253601016,
+      "p50_wait_s": 0.9945257470026263,
+      "p95_wait_s": 11127.374630304854,
+      "p99_wait_s": 21725.453327756924,
+      "mean_wait_high_prio_s": 4.378553548616112,
+      "mean_jct_s": 2453.6045760130437,
+      "mean_bounded_slowdown": 4.112243583534819,
+      "frac_node_compact": 0.61165,
+      "frac_island_compact": 0.7408564602095203,
+      "preemptions": 0,
+      "restarts_from_failures": 0,
+      "node_failures": 0,
+      "wait_heavy_tenant_s": 2118.0224143537444,
+      "wait_light_tenants_s": 27.09836295150258,
+      "tenants": {
+        "t0": {
+          "jobs": 9964,
+          "mean_wait_s": 2118.0224143537444,
+          "gpu_hours": 15181.647462569417
+        },
+        "t1": {
+          "jobs": 4026,
+          "mean_wait_s": 42.07188483342681,
+          "gpu_hours": 5765.345411248601
+        },
+        "t2": {
+          "jobs": 2983,
+          "mean_wait_s": 20.191155662462407,
+          "gpu_hours": 4899.817321523013
+        },
+        "t3": {
+          "jobs": 3027,
+          "mean_wait_s": 13.989938850603972,
+          "gpu_hours": 4368.563188662287
+        }
+      },
+      "sched_passes": 40000,
+      "sched_mean_us": 4128.2352106499975,
+      "sched_max_us": 48183.416
+    },
+    {
+      "policy": "fairshare+backfill+preemption",
+      "jobs": 20000,
+      "makespan_h": 29.97046158596097,
+      "utilisation": 0.9426298267330475,
+      "efficiency": 0.8614827022188108,
+      "mean_wait_s": 608.2123670040846,
+      "p50_wait_s": 0.05648113685310818,
+      "p95_wait_s": 3009.0699184172263,
+      "p99_wait_s": 14655.228850967898,
+      "mean_wait_high_prio_s": 0.0,
+      "mean_jct_s": 1929.9807802639425,
+      "mean_bounded_slowdown": 2.797662402124144,
+      "frac_node_compact": 0.7711962297278566,
+      "frac_island_compact": 0.8626885912866588,
+      "preemptions": 1643,
+      "restarts_from_failures": 0,
+      "node_failures": 0,
+      "wait_heavy_tenant_s": 1204.4833235153712,
+      "wait_light_tenants_s": 16.219161476140204,
+      "tenants": {
+        "t0": {
+          "jobs": 9964,
+          "mean_wait_s": 1204.4833235153712,
+          "gpu_hours": 14209.058640554365
+        },
+        "t1": {
+          "jobs": 4026,
+          "mean_wait_s": 22.285424351735614,
+          "gpu_hours": 5361.362325774717
+        },
+        "t2": {
+          "jobs": 2983,
+          "mean_wait_s": 15.82687642857054,
+          "gpu_hours": 4506.171795644289
+        },
+        "t3": {
+          "jobs": 3027,
+          "mean_wait_s": 8.537434340280672,
+          "gpu_hours": 4082.046182953544
+        }
+      },
+      "sched_passes": 41643,
+      "sched_mean_us": 3601.914767619982,
+      "sched_max_us": 71508.749
+    }
+  ],
+  "per_seed": [
+    [
+      {
+        "policy": "fifo",
+        "jobs": 20000,
+        "makespan_h": 30.609471558509757,
+        "utilisation": 0.942326652226875,
+        "efficiency": 0.8502395543334694,
+        "mean_wait_s": 2647.7428282858527,
+        "p50_wait_s": 1659.9818920853759,
+        "p95_wait_s": 6781.714912123782,
+        "p99_wait_s": 7112.089499204849,
+        "mean_wait_high_prio_s": 2.980709128422919,
+        "mean_jct_s": 3981.0721228505568,
+        "mean_bounded_slowdown": 9.343943420794432,
+        "frac_node_compact": 0.74895,
+        "frac_island_compact": 0.8451265086074864,
+        "preemptions": 0,
+        "restarts_from_failures": 0,
+        "node_failures": 0,
+        "wait_heavy_tenant_s": 2644.3757580305305,
+        "wait_light_tenants_s": 2651.085742596731,
+        "tenants": {
+          "t0": {
+            "jobs": 9964,
+            "mean_wait_s": 2644.3757580305305,
+            "gpu_hours": 14323.623750499104
+          },
+          "t1": {
+            "jobs": 4026,
+            "mean_wait_s": 2582.5385042893495,
+            "gpu_hours": 5408.119070371012
+          },
+          "t2": {
+            "jobs": 2983,
+            "mean_wait_s": 2657.748988659267,
+            "gpu_hours": 4650.623288079502
+          },
+          "t3": {
+            "jobs": 3027,
+            "mean_wait_s": 2735.689217463256,
+            "gpu_hours": 4148.62876824861
+          }
+        },
+        "sched_passes": 40000,
+        "sched_mean_us": 1123.240902224996,
+        "sched_max_us": 56937.962
+      }
+    ],
+    [
+      {
+        "policy": "fifo+backfill",
+        "jobs": 20000,
+        "makespan_h": 29.97113420198597,
+        "utilisation": 0.942715189044071,
+        "efficiency": 0.8748806611928163,
+        "mean_wait_s": 570.6525030979855,
+        "p50_wait_s": 6.469467835690011,
+        "p95_wait_s": 6227.876772481162,
+        "p99_wait_s": 7792.279373555844,
+        "mean_wait_high_prio_s": 4.724980808521056,
+        "mean_jct_s": 1879.2301115152807,
+        "mean_bounded_slowdown": 2.7273570443570683,
+        "frac_node_compact": 0.8163,
+        "frac_island_compact": 0.8978129020400661,
+        "preemptions": 0,
+        "restarts_from_failures": 0,
+        "node_failures": 0,
+        "wait_heavy_tenant_s": 570.1955050019037,
+        "wait_light_tenants_s": 571.1062226106753,
+        "tenants": {
+          "t0": {
+            "jobs": 9964,
+            "mean_wait_s": 570.1955050019037,
+            "gpu_hours": 13947.309806970808
+          },
+          "t1": {
+            "jobs": 4026,
+            "mean_wait_s": 555.2011364146254,
+            "gpu_hours": 5286.581369783971
+          },
+          "t2": {
+            "jobs": 2983,
+            "mean_wait_s": 558.3821683503521,
+            "gpu_hours": 4455.9838304741
+          },
+          "t3": {
+            "jobs": 3027,
+            "mean_wait_s": 604.7995595395953,
+            "gpu_hours": 4037.5413652004722
+          }
+        },
+        "sched_passes": 40000,
+        "sched_mean_us": 3493.160634950011,
+        "sched_max_us": 60186.768000000004
+      }
+    ],
+    [
+      {
+        "policy": "fairshare+backfill",
+        "jobs": 20000,
+        "makespan_h": 29.97046158596097,
+        "utilisation": 0.9423997704736692,
+        "efficiency": 0.8606144863677707,
+        "mean_wait_s": 587.7087740251241,
+        "p50_wait_s": 0.0,
+        "p95_wait_s": 2539.2894177360686,
+        "p99_wait_s": 14746.879632943605,
+        "mean_wait_high_prio_s": 4.187664517841653,
+        "mean_jct_s": 1908.8458508525755,
+        "mean_bounded_slowdown": 2.6906688109595063,
+        "frac_node_compact": 0.7813,
+        "frac_island_compact": 0.8710408625865343,
+        "preemptions": 0,
+        "restarts_from_failures": 0,
+        "node_failures": 0,
+        "wait_heavy_tenant_s": 1163.3706908565014,
+        "wait_light_tenants_s": 16.176755361527906,
+        "tenants": {
+          "t0": {
+            "jobs": 9964,
+            "mean_wait_s": 1163.3706908565014,
+            "gpu_hours": 14175.747608522732
+          },
+          "t1": {
+            "jobs": 4026,
+            "mean_wait_s": 23.125783962613042,
+            "gpu_hours": 5339.415662551499
+          },
+          "t2": {
+            "jobs": 2983,
+            "mean_wait_s": 13.221815435219627,
+            "gpu_hours": 4570.0601360703595
+          },
+          "t3": {
+            "jobs": 3027,
+            "mean_wait_s": 9.846328091031983,
+            "gpu_hours": 4101.822887487696
+          }
+        },
+        "sched_passes": 40000,
+        "sched_mean_us": 3686.0102203249976,
+        "sched_max_us": 60162.189999999995
+      }
+    ],
+    [
+      {
+        "policy": "fairshare+backfill, first-fit",
+        "jobs": 20000,
+        "makespan_h": 29.97046158596097,
+        "utilisation": 0.9620075254659582,
+        "efficiency": 0.8028423167499995,
+        "mean_wait_s": 1068.7967253601016,
+        "p50_wait_s": 0.9945257470026263,
+        "p95_wait_s": 11127.374630304854,
+        "p99_wait_s": 21725.453327756924,
+        "mean_wait_high_prio_s": 4.378553548616112,
+        "mean_jct_s": 2453.6045760130437,
+        "mean_bounded_slowdown": 4.112243583534819,
+        "frac_node_compact": 0.61165,
+        "frac_island_compact": 0.7408564602095203,
+        "preemptions": 0,
+        "restarts_from_failures": 0,
+        "node_failures": 0,
+        "wait_heavy_tenant_s": 2118.0224143537444,
+        "wait_light_tenants_s": 27.09836295150258,
+        "tenants": {
+          "t0": {
+            "jobs": 9964,
+            "mean_wait_s": 2118.0224143537444,
+            "gpu_hours": 15181.647462569417
+          },
+          "t1": {
+            "jobs": 4026,
+            "mean_wait_s": 42.07188483342681,
+            "gpu_hours": 5765.345411248601
+          },
+          "t2": {
+            "jobs": 2983,
+            "mean_wait_s": 20.191155662462407,
+            "gpu_hours": 4899.817321523013
+          },
+          "t3": {
+            "jobs": 3027,
+            "mean_wait_s": 13.989938850603972,
+            "gpu_hours": 4368.563188662287
+          }
+        },
+        "sched_passes": 40000,
+        "sched_mean_us": 4128.2352106499975,
+        "sched_max_us": 48183.416
+      }
+    ],
+    [
+      {
+        "policy": "fairshare+backfill+preemption",
+        "jobs": 20000,
+        "makespan_h": 29.97046158596097,
+        "utilisation": 0.9426298267330475,
+        "efficiency": 0.8614827022188108,
+        "mean_wait_s": 608.2123670040846,
+        "p50_wait_s": 0.05648113685310818,
+        "p95_wait_s": 3009.0699184172263,
+        "p99_wait_s": 14655.228850967898,
+        "mean_wait_high_prio_s": 0.0,
+        "mean_jct_s": 1929.9807802639425,
+        "mean_bounded_slowdown": 2.797662402124144,
+        "frac_node_compact": 0.7711962297278566,
+        "frac_island_compact": 0.8626885912866588,
+        "preemptions": 1643,
+        "restarts_from_failures": 0,
+        "node_failures": 0,
+        "wait_heavy_tenant_s": 1204.4833235153712,
+        "wait_light_tenants_s": 16.219161476140204,
+        "tenants": {
+          "t0": {
+            "jobs": 9964,
+            "mean_wait_s": 1204.4833235153712,
+            "gpu_hours": 14209.058640554365
+          },
+          "t1": {
+            "jobs": 4026,
+            "mean_wait_s": 22.285424351735614,
+            "gpu_hours": 5361.362325774717
+          },
+          "t2": {
+            "jobs": 2983,
+            "mean_wait_s": 15.82687642857054,
+            "gpu_hours": 4506.171795644289
+          },
+          "t3": {
+            "jobs": 3027,
+            "mean_wait_s": 8.537434340280672,
+            "gpu_hours": 4082.046182953544
+          }
+        },
+        "sched_passes": 41643,
+        "sched_mean_us": 3601.914767619982,
+        "sched_max_us": 71508.749
+      }
+    ]
+  ]
+}

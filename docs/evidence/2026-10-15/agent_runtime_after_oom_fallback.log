@@ -1,0 +1,10 @@
+ 23:15:07 up 23 min,  0 user,  load average: 20.02, 25.62, 24.74
+test agent_reports_gpus_from_nvidia_smi ... ok
+test orphaned_containers_are_removed_after_agent_kill9 ... ok
+OOM job reason: exit code 137 on test-oom-39497: OOM-killed (memory limit 16 MiB)
+test container_oom_kill_fails_the_job ... ok
+cancel -> container removed in 1.295139965s (job handles SIGTERM)
+cancel -> SIGTERM-ignoring container removed in 2.815646565s
+test container_limits_hardening_and_cancel ... ok
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.92s
+FMT_OK

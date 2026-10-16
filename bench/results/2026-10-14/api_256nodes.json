@@ -1,0 +1,29 @@
+{
+  "clients": 16,
+  "gpus": 2048,
+  "heartbeat_interval_ms": 1000,
+  "heartbeat_ms": {
+    "max": 82.727711,
+    "p50": 0.216593,
+    "p99": 6.90418
+  },
+  "heartbeats": 5655,
+  "heartbeats_per_s": 282.73029706278527,
+  "job_ms": 2000,
+  "jobs_queued_at_end": 0,
+  "jobs_succeeded": 1736,
+  "journal_bytes": 848260,
+  "nodes": 256,
+  "rate_limit_per_s": 100.0,
+  "sched_mean_ms": 0.6117156063348413,
+  "sched_passes": 221,
+  "seconds": 20.001393762,
+  "snapshot_bytes": 0,
+  "submit_ms": {
+    "max": 91.694197,
+    "p50": 4.56289,
+    "p99": 34.521786
+  },
+  "submits": 2016,
+  "submits_per_s": 100.79297592901416
+}

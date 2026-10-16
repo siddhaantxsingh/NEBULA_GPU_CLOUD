@@ -1,0 +1,13 @@
+{
+  "listen": "127.0.0.1:7070",
+  "data_dir": "nebula-data",
+  "admin_token": "change-me-admin",
+  "node_token": "change-me-node",
+  "heartbeat_timeout_s": 10,
+  "tick_ms": 200,
+  "policy": { "order": "fair_share", "backfill": true, "placement": "topology", "preemption": true },
+  "tenants": [
+    { "name": "research", "api_key": "change-me-research", "quota_gpus": 64, "weight": 1.0 },
+    { "name": "prod", "api_key": "change-me-prod", "weight": 2.0, "max_priority": 10 }
+  ]
+}
